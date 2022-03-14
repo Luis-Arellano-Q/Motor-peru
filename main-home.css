@@ -1,0 +1,77 @@
+
+body {
+  overflow-x: hidden;
+}
+.main {
+  background-color: var(--secondary-color);
+}
+.main-carrusel {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.container-carrusel{
+  display: flex;
+  overflow-x: hidden;
+  animation: carrusel 15s linear infinite alternate;
+}
+@keyframes carrusel {
+  0% {margin-left: 0px;}
+  20% {margin-left: 0px;}
+  30% {margin-left: -710px;} 
+  70% {margin-left: -710px;} 
+  80% {margin-left: -1420px;}
+  100% {margin-left: -1420px;}
+}
+.container-carrusel img {
+  width: 710px;
+  height: calc(100vh - 80px);
+}
+.container-form {
+  color: var(--third-color);
+  padding: 30px;
+}
+.form-title {
+  font-size: var(--medium);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.form .form-item{
+  font-size: var(--medium);
+  letter-spacing: 1px;
+  color: var(--color-hover);
+  margin: 10px 0;
+  height: 20px;
+  border: none;
+  border-bottom: 3px solid var(--third-color);
+  background-color: var(--secondary-color);
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.form .form-item:hover {
+  background-color: var(--secondary-color);
+}
+.form label {
+  font-size: var(--small);
+}
+.form-button {
+  padding: 10px 20px;
+  font-size: var(--medium);
+  width: 150px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--color-hover);
+  letter-spacing: 2px;
+  border-radius: 8px;
+}
+.form-button:hover {
+  color: var(--primary-color);
+  background-color: var(--color-hover);
+}

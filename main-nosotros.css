@@ -1,0 +1,26 @@
+.nosotros--info h2 {
+  color: var(--secondary-color);
+  font-size: var(--big);
+}
+.nosotros--info p {
+  color: var(--secondary-color);
+  font-size: var(--medium);
+  margin-bottom: 40px;
+  padding: 0 150px 0 20px;
+  line-height: 3rem;
+}
+.nosotros--info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+.nosotros--info ul li {
+  line-height: 5rem;
+  font-size: var(--medium);
+  align-items: center;
+}
+.nosotros--info ul li span img{
+  position: relative;
+  top: 3px;
+  width: 20px;
+}
